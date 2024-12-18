@@ -67,6 +67,17 @@ export const foregroundColors: Record<ForegroundColor, string> = {
   'foreground-accent-darker': '#014C37',
 }
 
+export type BorderColor =
+  | 'border-accent'
+  | 'border-accent-dark'
+  | 'border-accent-darker'
+
+export const borderColors: Record<BorderColor, string> = {
+  'border-accent': '#018762',
+  'border-accent-dark': '#007756',
+  'border-accent-darker': '#014C37',
+}
+
 export type TextColor =
   | 'text-heading'
   | 'text-body'
