@@ -1,10 +1,10 @@
 "use client"
 
 import React from 'react';
-import { Typography } from '@lacrei/marsha-react';
+import { Heading, Typography } from '@lacrei/marsha-react';
 
 export default function Home() {
   return (
-    <Typography variant="headline-xl" as="span" color="text-accent">Hello Lacrei</Typography>
+    <Heading as="h1" variant="headline-base" alignment="left">Hello Lacrei, Lorem ipsum dolor sit amet constectetur adiscipling elit.</Heading>
   );
 }
