@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
+import { Nunito } from 'next/font/google'
 
 import StyledComponentsRegistry from '@/lib/registry';
 
 import './global.css';
+
+const font = Nunito({
+  subsets: ['latin'],
+  display: 'auto',
+})
 
 export const metadata: Metadata = {
   title: "Lacrei Saúde",
@@ -16,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={font.className}>
         <StyledComponentsRegistry>
           {children}
         </StyledComponentsRegistry>

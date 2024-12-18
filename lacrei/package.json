@@ -13,7 +13,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "styled-components": "^6.1.13",
-    "@lacrei/marsha": "*"
+    "@lacrei/marsha-core": "*",
+    "@lacrei/marsha-react": "*"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
