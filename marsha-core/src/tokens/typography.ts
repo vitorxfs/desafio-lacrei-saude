@@ -1,4 +1,25 @@
-export const typography = {
+export type TypographyVariant =
+  | 'headline-xl'
+  | 'headline-lg'
+  | 'headline-base'
+  | 'headline-sm'
+  | 'headline-sm-highlight'
+  | 'text-xl'
+  | 'text-base'
+  | 'text-sm'
+  | 'text-xs'
+  | 'text-xl-highlight'
+  | 'text-base-highlight'
+  | 'text-sm-highlight'
+  | 'text-xs-highlight';
+
+export type TypographyStyles = {
+  'font-size': string;
+  'font-weight': string;
+  'line-height': string;
+};
+
+export const typography: Record<TypographyVariant, TypographyStyles> = {
   'headline-xl': {
     'font-size': '48px',
     'font-weight': 'bold',
@@ -19,13 +40,13 @@ export const typography = {
     'font-weight': 'regular',
     'line-height': '150%',
   },
-  'headline-highlight': {
+  'headline-sm-highlight': {
     'font-size': '24px',
     'font-weight': 'bold',
     'line-height': '150%',
   },
 
-  'text-highlight': {
+  'text-xl-highlight': {
     'font-size': '18px',
     'font-weight': 'bold',
     'line-height': '150%',
@@ -45,12 +66,12 @@ export const typography = {
     'font-weight': 'bold',
     'line-height': '150%',
   },
-  'text-base-sm': {
+  'text-sm': {
     'font-size': '14px',
     'font-weight': 'regular',
     'line-height': '150%',
   },
-  'text-base-sm-highlight': {
+  'text-sm-highlight': {
     'font-size': '14px',
     'font-weight': 'bold',
     'line-height': '150%',
@@ -60,7 +81,7 @@ export const typography = {
     'font-weight': 'regular',
     'line-height': '150%',
   },
-  'text-base-xs-highlight': {
+  'text-xs-highlight': {
     'font-size': '14px',
     'font-weight': 'bold',
     'line-height': '150%',
