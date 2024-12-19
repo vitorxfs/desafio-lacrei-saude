@@ -4,7 +4,11 @@
     "build:marsha-core": "npm run build -w @lacrei/marsha-core",
     "build:marsha-react": "npm run build -w @lacrei/marsha-react",
     "build:ui": "npm run build -w @lacrei/ui",
-    "build": "build:marsha-core && build:marsha-core && build:marsha-core"
+    "build": "npm run build:marsha-core && npm run build:marsha-react && npm run build:ui",
+    "dev:marsha-core": "npm run dev -w @lacrei/marsha-core",
+    "dev:marsha-react": "npm run dev -w @lacrei/marsha-react",
+    "dev:ui": "npm run dev -w @lacrei/ui",
+    "start": "npm run start -w @lacrei/ui"
   },
   "workspaces": [
     "*"
