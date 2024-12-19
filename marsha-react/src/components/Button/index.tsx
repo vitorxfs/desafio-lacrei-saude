@@ -37,10 +37,23 @@ const variants = {
       color: ${textColors['text-pressed']}
     }
   `,
+  link: css`
+    border: none;
+    background-color: none;
+    color: ${textColors['text-accent']};
+    box-shadow: none;
+    font-weight: bold;
+    &:hover {
+      background-color: ${backgroundColors['background-accent-lighter']};
+    }
+    &:active {
+      background-color: ${backgroundColors['background-accent-light']};
+    }
+  `,
 }
 
 interface Props {
-  variant?: 'primary' | 'secondary';
+  variant?: 'primary' | 'secondary' | 'link';
 }
 
 export const Button = styled.button<Props>`
