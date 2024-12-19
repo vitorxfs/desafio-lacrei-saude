@@ -4,11 +4,12 @@ import { Nunito } from 'next/font/google'
 import StyledComponentsRegistry from '@/lib/registry';
 
 import './global.css';
+import 'material-symbols';
 
 const font = Nunito({
   subsets: ['latin'],
   display: 'auto',
-})
+});
 
 export const metadata: Metadata = {
   title: "Lacrei Saúde",

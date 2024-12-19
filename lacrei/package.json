@@ -9,12 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lacrei/marsha-core": "*",
+    "@lacrei/marsha-react": "*",
+    "material-symbols": "^0.27.2",
     "next": "15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "styled-components": "^6.1.13",
-    "@lacrei/marsha-core": "*",
-    "@lacrei/marsha-react": "*"
+    "styled-components": "^6.1.13"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

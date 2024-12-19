@@ -1,4 +1,4 @@
-const spacingPrimitives = {
+export const spacingPrimitives = {
   'spacing-4-xs': '0.125rem',
   'spacing-3-xs': '0.25rem',
   'spacing-2-xs': '0.5rem',

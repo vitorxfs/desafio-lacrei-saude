@@ -45,14 +45,16 @@ interface Props {
 
 export const Button = styled.button<Props>`
   border-radius: ${radii['border-radius-sm']};
+  box-shadow: ${shadows.md};
   cursor: pointer;
+  display: flex;
   font-family: 'Nunito';
   font-size: ${typography['text-xl']['font-size']};
   font-weight: ${typography['text-xl']['font-weight']};
   height: 48px;
+  line-height: 48px;
   padding: 0 ${spacingInline.xxm};
   width: fit-content;
-  box-shadow: ${shadows.md};
   &:hover, &:active, &:disabled {
     box-shadow: none;
   }
