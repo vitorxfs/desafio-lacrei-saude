@@ -3,7 +3,7 @@
   "packageManager": "npm@10.2.3",
   "scripts": {
     "dev": "turbo dev --parallel",
-    "build": "turbo build --parallel",
+    "build": "turbo run build",
     "start": "npm run start -w @lacrei/ui"
   },
   "workspaces": [
