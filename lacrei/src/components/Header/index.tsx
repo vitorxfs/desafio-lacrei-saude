@@ -7,7 +7,7 @@ import { MenuDrawer } from './MenuDrawer';
 export function Header() {
   const links = [
     { label: 'Início', url: '/' },
-    { label: 'Sobre', url: '/' },
+    { label: 'Sobre', url: '/#about' },
     { label: 'FAQ', url: '/faq' },
   ];
 

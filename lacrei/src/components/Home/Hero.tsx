@@ -2,6 +2,10 @@ import { breakpoints, gradients, spacingInline, spacingPrimitives } from '@lacre
 import { Typography, Button, Grid } from '@lacrei/marsha-react';
 import styled from 'styled-components';
 
+const Container = styled(Grid)`
+  margin-top: ${spacingPrimitives['spacing-layout-lg']}
+`
+
 const HeroImage = styled.img`
   display: flex;
   width: 100%;
@@ -60,7 +64,7 @@ const LGBTGradient = styled.span`
 
 export function Hero() {
   return (
-    <Grid id="hero" as="section" cols="12">
+    <Container id="hero" as="section" cols="12">
       <ImageContainer>
         <HeroImage
           src="assets/home-hero-image.png"
@@ -101,6 +105,6 @@ export function Hero() {
           </Button>
         </CTAContainer>
       </TextContainer>
-    </Grid>
+    </Container>
   )
 }
