@@ -1,16 +1,15 @@
 {
   "private": true,
+  "packageManager": "npm@10.2.3",
   "scripts": {
-    "build:marsha-core": "npm run build -w @lacrei/marsha-core",
-    "build:marsha-react": "npm run build -w @lacrei/marsha-react",
-    "build:ui": "npm run build -w @lacrei/ui",
-    "build": "npm run build:marsha-core && npm run build:marsha-react && npm run build:ui",
-    "dev:marsha-core": "npm run dev -w @lacrei/marsha-core",
-    "dev:marsha-react": "npm run dev -w @lacrei/marsha-react",
-    "dev:ui": "npm run dev -w @lacrei/ui",
+    "dev": "turbo dev --parallel",
+    "build": "turbo build --parallel",
     "start": "npm run start -w @lacrei/ui"
   },
   "workspaces": [
     "*"
-  ]
+  ],
+  "dependencies": {
+    "turbo": "^2.3.3"
+  }
 }

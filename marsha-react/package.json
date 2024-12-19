@@ -4,10 +4,6 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
-  },
   "license": "MIT",
   "dependencies": {
     "@lacrei/marsha-core": "*",
@@ -21,7 +17,6 @@
   "devDependencies": {
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "tsup": "^8.3.5",
     "typescript": "^5"
   }
 }
