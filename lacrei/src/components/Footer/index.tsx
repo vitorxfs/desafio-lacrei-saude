@@ -1,5 +1,6 @@
 import { Grid, Typography } from '@lacrei/marsha-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import {
   FooterContainer,
@@ -38,13 +39,13 @@ export const Footer = () => {
       </Ornament>
       <BlockContainer>
         <ContentContainer>
-          <img src="assets/logo-invert.svg" alt="Lacrei Saúde" />
+          <Image src="/assets/logo-invert.svg" alt="Lacrei Saúde" width="170" height="48" />
           <Grid cols="12">
             <Column>
               <ul>
                 {lacreiLinks.map((link) => (
-                  <li>
-                    <Link key={link.label} href={link.url}>
+                  <li key={link.label}>
+                    <Link href={link.url}>
                       <Typography color="text-invert"  variant="text-xl">{link.label}</Typography>
                     </Link>
                   </li>
@@ -54,8 +55,8 @@ export const Footer = () => {
             <Column>
               <ul>
                 {platformLinks.map((link) => (
-                  <li>
-                    <Link key={link.label} href={link.url}>
+                  <li key={link.label}>
+                    <Link href={link.url}>
                       <Typography color="text-invert" variant="text-xl">{link.label}</Typography>
                     </Link>
                   </li>
@@ -65,8 +66,8 @@ export const Footer = () => {
             <Column>
               <ul>
                 {privacyLinks.map((link) => (
-                  <li>
-                    <Link key={link.label} href={link.url}>
+                  <li key={link.label}>
+                    <Link href={link.url}>
                       <Typography color="text-invert" variant="text-xl">{link.label}</Typography>
                     </Link>
                   </li>
@@ -74,7 +75,7 @@ export const Footer = () => {
               </ul>
             </Column>
             <Column>
-              <Flag src="assets/lgbtqiapn_plus-flag.png" width="100" alt="Bandeira LGBTQIAPN+" />
+              <Flag src="/assets/lgbtqiapn_plus-flag.png" width="100" height="64" alt="Bandeira LGBTQIAPN+" />
             </Column>
           </Grid>
           <BottomContainer>

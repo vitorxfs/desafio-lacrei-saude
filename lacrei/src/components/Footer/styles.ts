@@ -1,4 +1,5 @@
 import { spacingPrimitives, backgroundColors, textColors, breakpoints, shadows, radii } from '@lacrei/marsha-core';
+import Image from 'next/image';
 import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
@@ -42,7 +43,7 @@ export const BottomContainer = styled.div`
   margin-top: ${spacingPrimitives['spacing-layout-lg']};
 `;
 
-export const Flag = styled.img`
+export const Flag = styled(Image)`
   box-shadow: ${shadows.md};
   border-radius: ${radii['border-radius-sm']};
 `

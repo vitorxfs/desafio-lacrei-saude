@@ -1,6 +1,7 @@
-import { breakpoints, foregroundColors, spacingInline, spacingPrimitives, textColors } from '@lacrei/marsha-core';
-import { Button, Drawer } from '@lacrei/marsha-react';
 import styled from 'styled-components';
+
+import { breakpoints, foregroundColors, spacingInline, spacingPrimitives, textColors } from '@lacrei/marsha-core';
+import { Button } from '@lacrei/marsha-react';
 
 export const Container = styled.header`
   display: flex;

@@ -3,6 +3,7 @@ import { Button, Typography } from '@lacrei/marsha-react';
 
 import { Container, Nav } from './styles';
 import { MenuDrawer } from './MenuDrawer';
+import Image from 'next/image';
 
 export function Header() {
   const links = [
@@ -14,7 +15,7 @@ export function Header() {
   return (
     <Container>
       <Link href="/" aria-label="Início">
-        <img src="assets/logo.svg" alt="Logo da Lacrei Saúde" />
+        <Image src="/assets/logo.svg" alt="Logo da Lacrei Saúde" width="114" height="32" />
       </Link>
       <Nav className="lg">
         <ul>

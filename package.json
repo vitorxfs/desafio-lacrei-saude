@@ -1,5 +1,11 @@
 {
   "private": true,
+  "scripts": {
+    "build:marsha-core": "npm run build -w @lacrei/marsha-core",
+    "build:marsha-react": "npm run build -w @lacrei/marsha-react",
+    "build:ui": "npm run build -w @lacrei/ui",
+    "build": "build:marsha-core && build:marsha-core && build:marsha-core"
+  },
   "workspaces": [
     "*"
   ]

@@ -1,4 +1,4 @@
-import { breakpoints, gradients, primitiveColors, spacingInline, spacingPrimitives, textColors } from '@lacrei/marsha-core';
+import { breakpoints, gradients, primitiveColors, spacingPrimitives } from '@lacrei/marsha-core';
 import { Typography, Button, Grid, Icon, Heading } from '@lacrei/marsha-react';
 import styled from 'styled-components';
 

@@ -1,12 +1,13 @@
 import { breakpoints, gradients, spacingInline, spacingPrimitives } from '@lacrei/marsha-core';
 import { Typography, Button, Grid } from '@lacrei/marsha-react';
+import Image from 'next/image';
 import styled from 'styled-components';
 
 const Container = styled(Grid)`
-  margin-top: ${spacingPrimitives['spacing-layout-lg']}
+  margin-top: ${spacingPrimitives['spacing-layout-lg']};
 `
 
-const HeroImage = styled.img`
+const HeroImage = styled(Image)`
   display: flex;
   width: 100%;
   height: auto;
@@ -47,7 +48,7 @@ const CTAPaciente = styled(Button)`
   background: linear-gradient(90deg, ${gradients['gradient-lacrei'].join(', ')});
 `;
 
-const LGBTGradientColors = ['#FA0000', '#FF9101', '#A79602', '#008A17', '#00776F', '#0D00FF']
+const LGBTGradientColors = ['#FA0000', '#FF9101', '#A79602', '#008A17', '#00776F', '#0D00FF'];
 
 const CTAProfissionalText = styled.span`
   background: linear-gradient(90deg, ${gradients['gradient-lacrei'].join(', ')});
@@ -67,8 +68,9 @@ export function Hero() {
     <Container id="hero" as="section" cols="12">
       <ImageContainer>
         <HeroImage
-          src="assets/home-hero-image.png"
-          width="480"
+          src="/assets/home-hero-image.png"
+          width="564"
+          height="455"
           alt="Pessoa com cabelo longo lilás, macacão verde e de pele negra se movendo livremente. Há plantas ao redor."
         />
       </ImageContainer>
