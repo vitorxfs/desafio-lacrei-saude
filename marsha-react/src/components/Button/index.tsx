@@ -61,12 +61,13 @@ export const Button = styled.button<Props>`
   box-shadow: ${shadows.md};
   cursor: pointer;
   display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Nunito';
   font-size: ${typography['text-xl']['font-size']};
   font-weight: ${typography['text-xl']['font-weight']};
-  height: 48px;
-  line-height: 48px;
-  padding: 0 ${spacingInline.xxm};
+  min-height: 48px;
+  padding: ${spacingInline.xs} ${spacingInline.xxm};
   width: fit-content;
   &:hover, &:active, &:disabled {
     box-shadow: none;
